@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 published: true
 layout: default
@@ -17,3 +18,26 @@ layout: default
       {% endfor %}
   	</p>
 </article>
+=======
+---
+published: true
+layout: default
+---
+
+<article>
+	<h2>
+	  <a href="{{ page.url }}">{{ page.title }}</a>
+	</h2>
+	<em>{{ page.date | date: site.date_format }}</em>
+
+	{{ content }}
+
+  {% if page.categories %}
+  <p>Posted in:
+      {% for cat in page.categories %}
+   	<a href="/c/{{cat}}/">{{cat}}</a>
+      {% endfor %}
+  	</p>
+  {% endif %}
+</article>
+>>>>>>> 8ed3acf60fa721cd369390b12fe2c06c0e3a9ccd
