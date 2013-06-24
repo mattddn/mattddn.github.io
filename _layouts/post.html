@@ -11,9 +11,11 @@ layout: default
 
 	{{ content }}
 
-    <p>Tagged:
-      {% for tag in page.categories %}
+  {% if page.tags %}
+  <p>Tagged:
+      {% for tag in page.tags %}
       <a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
       {% endfor %}
   	</p>
+  {% endif %}
 </article>
