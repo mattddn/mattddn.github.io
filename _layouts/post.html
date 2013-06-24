@@ -1,6 +1,8 @@
 ---
+published: true
 layout: default
 ---
+
 <article>
 	<h2>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
@@ -9,7 +11,9 @@ layout: default
 
 	{{ content }}
 
-	{% for tag in page.categories %}
-	<a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
-	{% endfor %}
+    <p>Tagged:
+      {% for tag in page.categories %}
+      <a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
+      {% endfor %}
+  	</p>
 </article>
