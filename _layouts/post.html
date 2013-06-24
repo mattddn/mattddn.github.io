@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 published: true
 layout: default
@@ -12,32 +11,11 @@ layout: default
 
 	{{ content }}
 
-    <p>Tagged:
-      {% for tag in page.categories %}
-      <a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
-      {% endfor %}
-  	</p>
-</article>
-=======
----
-published: true
-layout: default
----
-
-<article>
-	<h2>
-	  <a href="{{ page.url }}">{{ page.title }}</a>
-	</h2>
-	<em>{{ page.date | date: site.date_format }}</em>
-
-	{{ content }}
-
-  {% if page.categories %}
+  {% if page.categories[0] %}
   <p>Posted in:
-      {% for cat in page.categories %}
-   	<a href="/c/{{cat}}/">{{cat}}</a>
-      {% endfor %}
-  	</p>
+    {% for cat in page.categories %}
+   	<a href="/{{cat}}/">{{cat | capitalize}}</a>
+    {% endfor %}
+  </p>
   {% endif %}
 </article>
->>>>>>> 8ed3acf60fa721cd369390b12fe2c06c0e3a9ccd

@@ -202,6 +202,14 @@ hr {
   margin:0 0 20px;
 }
 
+ul.archive {
+    list-style-type: none;
+    padding: 0;
+}
+ul.archive small {
+    margin-right: 10px;
+}
+
 footer {
   width:270px;
   float:left;
