@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+	<h2>
+	  <a href="{{ page.url }}">{{ page.title }}</a>
+	</h2>
+	<em>{{ page.date | date: site.date_format }}</em>
+
+	{{ content }}
+
+	{% for tag in page.categories %}
+	<a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
+	{% endfor %}
+</article>

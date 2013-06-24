@@ -1,0 +1,5 @@
+name: mattddn.github.io
+url: http://mattddn.github.io
+pygments: true
+permalink: /:year-:month-:day-:title.html
+date_format: "%d %b, %Y"
