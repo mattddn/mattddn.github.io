@@ -9,14 +9,15 @@ description: Categories
 <ul class="archive">
   {% for cat in site.categories %}
   <li>
-    <a href="/">{{ cat[0] | capitalize }}</a>
+    <a href="#{{ cat[0] }}">{{ cat[0] | capitalize }}</a>
   </li>
   {% endfor %}
 </ul>
 
 <hr>
 
-<h2>Trip Reports</h2>
+<h2 id="trip-reports">Trip Reports</h2>
+
 <hr>
 <ul class="archive">
   {% for post in site.categories['trip reports'] %}
