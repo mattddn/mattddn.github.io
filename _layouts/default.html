@@ -25,7 +25,7 @@
 
         <p class="view latest">
           Recent posts:<br>
-          {% for post in site.posts limit:5 %}
+          {% for post in site.posts limit:3 %}
             <a href="{{post.url}}">{{post.title}}</a><br>
           {% endfor %}
         </p>
