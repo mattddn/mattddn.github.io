@@ -35,7 +35,7 @@
       <p class="view latest">
         Quick Links:<br>
         {% for cat in site.categories %}
-          <a href="/categories.html#{{ cat[0] | replace:' ','-' }}">{{ cat[0] | capitalize }}</a>{% if forloop.last = false %}&nbsp;/&nbsp;{% endif %}
+          <a href="/categories.html#{{ cat[0] | replace:' ','-' }}">{{ cat[0] | capitalize }}</a>{% if forloop.last == false %}&nbsp;/&nbsp;{% endif %}
         {% endfor %}
       </p>
 
