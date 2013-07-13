@@ -16,10 +16,10 @@ description: Desc
 <hr>
 {% else %}
 <article>
-	<em>{{ page.date | date: site.date_format }}</em>
 	<h2>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
 	</h2>
+  <em>{{ page.date | date: site.date_format }}</em>  
 	{{ page.content }}
 </article>
 <hr>
