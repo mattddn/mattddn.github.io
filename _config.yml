@@ -1,5 +1,8 @@
 name: mattddn.github.io
 url: http://mattddn.github.io
 pygments: true
-permalink: /:year-:month-:day-:title.html
+permalink: /:year/:month/:title.html
 date_format: "%d %b, %Y"
+
+paginate: 3
+paginate_path: "page-:num"

@@ -4,7 +4,7 @@ title: Blog
 description: Desc
 ---
 
-{% for page in site.posts limit:5 %}
+{% for page in paginator.posts %}
 {% if page.layout == 'photo' %}
 <article>
 	<em>{{ page.date | date: site.date_format }}</em>
@@ -16,13 +16,31 @@ description: Desc
 <hr>
 {% else %}
 <article>
+	<em>{{ page.date | date: site.date_format }}</em>
 	<h2>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
 	</h2>
-	<em>{{ page.date | date: site.date_format }}</em>
 	{{ page.content }}
 </article>
 <hr>
 {% endif %}
 {% endfor %}
+
+<!-- Pagination links -->
+<ul class="pager">
+  {% if paginator.next_page %}
+    <li><a href="/page-{{ paginator.next_page }}">&larr; Older</a></li>
+  {% else %}
+    <li class="disabled"><span>&larr; Older</span></li>
+  {% endif %}
+  {% if paginator.previous_page %}
+  {% if paginator.previous_page > 1  %}
+    <li><a href="/page-{{ paginator.previous_page }}">Newer&rarr; </a></li>
+  {% else %}
+  	<li><a href="/">Newer &rarr;</a></li>
+  {% endif %}
+  {% else %}
+    <li class="disabled"><span>Newer &rarr;</span></li>
+  {% endif %}
+</ul>
 

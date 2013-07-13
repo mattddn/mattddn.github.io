@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }} - {{ site.name }}</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pygment_trac.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,9 +33,9 @@
         </p> -->
 
       <p class="view latest">
-        Categories:<br>
+        Quick Links:<br>
         {% for cat in site.categories %}
-        <a href="/categories.html#{{ cat[0] | replace:' ','-' }}">{{ cat[0] | capitalize }}</a><br>
+          <a href="/categories.html#{{ cat[0] | replace:' ','-' }}">{{ cat[0] | capitalize }}</a>{% if forloop.last = false %}&nbsp;/&nbsp;{% endif %}
         {% endfor %}
       </p>
 

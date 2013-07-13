@@ -16,14 +16,11 @@ description: Categories
 
 <hr>
 
-{% for cat in site.categories %}
-{% assign name = cat[0] %}
-
-<h2 id="{{ name | replace:' ','-' }}">{{ name | capitalize }}</h2>
+<h2 id="trip-reports">Trip Reports</h2>
 
 <hr>
 <ul class="archive">
-  {% for post in site.categories[name] %}
+  {% for post in site.categories['trip reports'] %}
   <li>
     <small>{{ post.date | date: site.date_format }}</small>
     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -31,4 +28,14 @@ description: Categories
   {% endfor %}
 </ul>
 
-{% endfor %}
+<h2 id="gear">Gear</h2>
+
+<hr>
+<ul class="archive">
+  {% for post in site.categories['gear'] %}
+  <li>
+    <small>{{ post.date | date: site.date_format }}</small>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
