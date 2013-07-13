@@ -20,15 +20,24 @@
 
         <p class="view">
           <a href="/archive.html">Archive</a>&nbsp;/&nbsp;
+          <a href="/categories.html">Categories</a>&nbsp;/&nbsp;
           <a href="/atom.xml">RSS</a>
         </p>
 
+<!--
         <p class="view latest">
           Recent posts:<br>
           {% for post in site.posts limit:3 %}
             <a href="{{post.url}}">{{post.title}}</a><br>
           {% endfor %}
-        </p>
+        </p> -->
+
+      <p class="view latest">
+        Categories:<br>
+        {% for cat in site.categories %}
+        <a href="/categories.html#{{ cat[0] | replace:' ','-' }}">{{ cat[0] | capitalize }}</a><br>
+        {% endfor %}
+      </p>
 
       </header>
 

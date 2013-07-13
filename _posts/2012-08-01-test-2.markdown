@@ -2,6 +2,8 @@
 title: A test photo post
 layout: photo
 description: Test.
+categories:
+    - photos
 ---
 [![Alt](http://i.imgur.com/yiTktwml.jpg)](http://google.com.au/)
 
