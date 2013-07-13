@@ -4,7 +4,7 @@ title: Blog
 description: Desc
 ---
 
-{% for page in site.posts limit:3 %}
+{% for page in site.posts limit:5 %}
 {% if page.layout == 'photo' %}
 <article>
 	<em>{{ page.date | date: site.date_format }}</em>
