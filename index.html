@@ -5,25 +5,22 @@ description: Desc
 ---
 
 {% for page in paginator.posts %}
-{% if page.layout == 'photo' %}
 <article>
+{% if page.layout == 'photo' %}
 	<em>{{ page.date | date: site.date_format }}</em>
 	<div class="lightbox">
 		{{ page.content }}
 		<!-- <a href="{{ page.url }}">#</a> -->
 	</div>
-</article>
-<hr>
 {% else %}
-<article>
 	<h2>
 	  <a href="{{ page.url }}">{{ page.title }}</a>
 	</h2>
-  <em>{{ page.date | date: site.date_format }}</em>  
+  	<em>{{ page.date | date: site.date_format }}</em>  
 	{{ page.content }}
+{% endif %}
 </article>
 <hr>
-{% endif %}
 {% endfor %}
 
 <!-- Pagination links -->
