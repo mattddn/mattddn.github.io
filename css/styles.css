@@ -210,7 +210,7 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 10000px) {
+@media print, screen and (max-width: 1000px) {
   body {
     padding: 20px;
   }
