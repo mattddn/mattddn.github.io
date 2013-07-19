@@ -5,6 +5,6 @@ description: Test.
 categories:
     - photos
 ---
-[![Alt](http://farm3.staticflickr.com/2812/9284456196_5fb1c1d752_z.jpg)](http://google.com.au/)
+![](http://farm3.staticflickr.com/2812/9284456196_5fb1c1d752_z.jpg)
 
 Caption [#]({{ page.url }})

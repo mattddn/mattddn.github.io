@@ -19,7 +19,7 @@ description: Categories
 {% for cat in site.categories %}
 {% assign name = cat[0] %}
 
-<h2 id="{{ name | replace:' ','-' }}">{{ name | capitalize }}</h2>
+<h2 name="{{ name | replace:' ','-' }}">{{ name | capitalize }}</h2>
 
 <hr>
 <ul class="archive">

@@ -60,7 +60,7 @@ a small {
 }
 
 .wrapper {
-  width:960px;
+  width:920px;
   margin:0 auto;
 }
 
@@ -187,7 +187,7 @@ header ul li + li + li {
 }
 
 section {
-  width:700px;
+  width:640px;
   float:right;
   padding-bottom:50px;
 }

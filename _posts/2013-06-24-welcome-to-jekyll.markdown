@@ -9,6 +9,8 @@ categories:
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
+![](http://farm3.staticflickr.com/2812/9284456196_5fb1c1d752_z.jpg)
+
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
